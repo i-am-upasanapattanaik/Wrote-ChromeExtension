@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wrote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Wrote</h1>
+
+      <label class="label" for="urlField">Current page URL</label>
+      <input id="urlField" class="url-field" type="text" readonly />
+
+      <label class="label" for="impressionField">My Impressions</label>
+      <textarea
+        id="impressionField"
+        class="impression-field"
+        aria-label="My Impressions"
+        placeholder="What do you want to remember about this page?"
+      ></textarea>
+
+      <button id="saveButton" class="save-button" type="button">Save to Notion</button>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
